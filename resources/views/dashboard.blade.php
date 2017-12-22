@@ -64,6 +64,11 @@
   </div>
 </div>
 
+<div class="" style="background:green;width:100px;height:150px;color:yellow;">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+</div>
+
+
 <script type="text/javascript">
   var token = '{{ Session::token() }}';
   var url = '{{ route('edit')}}';
