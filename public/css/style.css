@@ -19,3 +19,6 @@
     color: #aaa;
     font-style: italic;
 }
+#navbarSupportedContent ul li a{
+    display: inline-block;
+}

@@ -21,6 +21,8 @@ Route::get('/dashboard','postController@getDashboard')->name('dashboard');
 Route::POST('/createpost','postController@postCreatePost')->name('post.create');
 Route::get('/delete-post/{post_id}','postController@getDeletePost')->name('post.delete')->middleware('auth');
 Route::get('/logout','userController@getLogout')->name('logout');
+Route::get('/account','userController@getAccount')->name('account');
+Route::post('/updateaccount','userController@postSaveAccount')->name('account.save');
 Route::post('/edit',function(\Illuminate\Http\Request $request){
     return response()->json(['message' => $request['postId']]);
     /*
