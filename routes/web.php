@@ -23,6 +23,7 @@ Route::get('/delete-post/{post_id}','postController@getDeletePost')->name('post.
 Route::get('/logout','userController@getLogout')->name('logout');
 Route::get('/account','userController@getAccount')->name('account');
 Route::post('/updateaccount','userController@postSaveAccount')->name('account.save');
+Route::get('/user.image/{filename}','userController@getUserImage')->name('account.image');
 Route::post('/edit',function(\Illuminate\Http\Request $request){
     return response()->json(['message' => $request['postId']]);
     /*
