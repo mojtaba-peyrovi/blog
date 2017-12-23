@@ -1,5 +1,5 @@
 var postId = 0;
-$('.post').find('.interaction').find('.edit').on('click',function() {
+$('.post').find('.interaction').find('.edit').on('click',function(event) {
     event.preventDefault();
     var postBody = event.target.parentNode.parentNode.childNodes[1].textContent;
     postId = event.target.parentNode.parentNode.dataset['postid'];
